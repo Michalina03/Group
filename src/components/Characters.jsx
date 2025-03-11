@@ -35,7 +35,7 @@ function Characters() {
       });
   }, []); // Pusty array dependency powoduje, że fetch zostanie wykonany tylko raz po zamontowaniu komponentu
 
-  return <div>{characters.map((character) => addCharacter(character))}</div>;
+  return <div className="container">{characters.map((character) => addCharacter(character))}</div>;
 }
 
 export default Characters;

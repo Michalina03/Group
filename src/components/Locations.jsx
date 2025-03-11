@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Location from './Location'
 
 function Locations() {
-    function addLocation({id, name, type,dimension,residents, created}){
+    function addLocation({id, name, type,dimension,created}){
         return(
             <Location
             key={id}
@@ -10,7 +10,6 @@ function Locations() {
             name={name}
             type={type}
             dimension = {dimension}
-            residents={residents}
             created = {created}
             />
         )
@@ -35,7 +34,7 @@ function Locations() {
     }, []);
 
 
-  return <div>{locations.map((location) => addLocation(location))}</div>
+  return <div className="container">{locations.map((location) => addLocation(location))}</div>
 }
 
 export default Locations;

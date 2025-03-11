@@ -2,7 +2,7 @@ import React from "react";
 
 function Character(props) {
   return (
-    <div>
+    <div className="card">
       <p>id: {props.id}</p>
       <p>name: {props.name}</p>
       <p>status: {props.status}</p>

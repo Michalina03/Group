@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh; // Odpowiednia przestrzeń, równą wysokości nagłówka
+}
+nav {
+    background-color: chartreuse;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color:black;
+  }
+  
+  /* Responsive styles for tablets and below */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 480px) {
+    nav {
+      padding: 15px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  
+    nav ul li {
+      padding: 12px;
+    }
+  }

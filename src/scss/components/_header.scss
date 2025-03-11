@@ -1,0 +1,16 @@
+.header{
+    background-color: chartreuse;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed; /* Przykleja header na górze */
+    top: 0; /* Ustawia go na górze */
+    width: 100%; /* Szerokość na 100% */
+    z-index: 10; 
+    h1{
+        color: white;
+        margin-left: 3%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+}

@@ -4,6 +4,7 @@ import "./scss/main.css";
 import Home from "./components/Home";
 import Characters from "./components/Characters";
 import Locations from "./components/Locations";
+import Episodes from "./components/Episodes";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -13,13 +14,16 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-            <Link to="/">Strona główna</Link>
+            <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/characters">Przejdź do Characters</Link>
+          <Link to="/characters">Character</Link>
         </li>
         <li>
-          <Link to="/locations">Przejdź do Locations</Link>
+          <Link to="/locations">Location</Link>
+        </li>
+        <li>
+          <Link to="/episodes">Episode</Link>
         </li>
       </ul>
     </nav>
@@ -35,6 +39,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/episodes" element={<Episodes />} />
       </Routes>
     </BrowserRouter>
     <Footer />

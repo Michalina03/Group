@@ -1,0 +1,10 @@
+.footer {
+    background-color: chartreuse;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Ustawia stopkę na stałe na dole */
+    bottom: 0; /* Przykleja do dołu */
+    width: 100%;
+}
