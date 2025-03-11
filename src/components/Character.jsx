@@ -5,9 +5,9 @@ function Character(props) {
     <div>
       <p>id: {props.id}</p>
       <p>name: {props.name}</p>
-      <p>status {props.status}</p>
-      <p>species {props.species}</p>
-      <p>type {props.type}</p>
+      <p>status: {props.status}</p>
+      <p>species: {props.species}</p>
+      <p>type: {props.type}</p>
       <img src={props.image} alt="" />
     </div>
   );

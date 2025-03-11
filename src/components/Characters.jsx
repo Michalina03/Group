@@ -23,7 +23,7 @@ function Characters() {
     fetch("https://rickandmortyapi.com/api/character")
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`HTTP tatus: ${response.status}`);
+          throw new Error(`HTTP status: ${response.status}`);
         }
         return response.json();
       })
